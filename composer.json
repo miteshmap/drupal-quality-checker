@@ -40,8 +40,8 @@
   "extra": {
     "drupal-scaffold": {
       "file-mapping": {
-        "[project-root]/grumphp.yml.dist": "grumphp.yml",
-        "[project-root]/phpcs.xml.dist": "phpcs.xml"
+        "[project-root]/grumphp.yml.dist": "grumphp.yml.dist",
+        "[project-root]/phpcs.xml.dist": "phpcs.xml.dist"
       }
     }
   }
