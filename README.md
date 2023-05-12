@@ -10,8 +10,18 @@ Provides set of libraries to easily setup code quality checks based on [GrumPHP]
 
 ## Install
 
-1. Add `vijaycs85/drupal-quality-checker` to `composer.json` (like [here](https://github.com/vijaycs85/modal_config/blob/8.x-1.x/composer.json#L21)) or just `composer require --dev vijaycs85/drupal-quality-checker`
-2. Replace `grumphp.yml` in project's root directory (not Drupal root directory) with `vendor/vijaycs85/drupal-quality-checker/grumphp.yml.dist`
+1. Add following code to `composer.json` under `extra.drupal-scaffold.allowed-packages` section.
+   ```
+    "extra": {
+        "drupal-scaffold": {
+            "allowed-packages": [
+                "miteshmap/drupal-quality-checker"
+            ],
+        }
+    }
+    ```
+2. `composer require "miteshmap/drupal-quality-checker:^1.0"`
+3. copy `grumphp.yml.dist` in project's root directory (not Drupal root directory) with `./grumphp.yml`
 
 That's it. Now, all tasks (listed below) run on every `git commit`.
 
@@ -28,14 +38,3 @@ That's it. Now, all tasks (listed below) run on every `git commit`.
 1. [PHP Copy/Paste Detector (CPD)](https://github.com/sebastianbergmann/phpcpd)
 
 Long list of additional checks/validators available [here](https://github.com/phpro/grumphp/blob/master/doc/tasks.md#tasks-1).
-
-## Sample
-
-### Pass
-![drupal-quality-checker-pass](./docs/images/drupal-quality-checker-pass.png)
-
-### Fail
-![drupal-quality-checker-fail](./docs/images/drupal-quality-checker-fail.png)
-
-## Demo
-Implemented in [Modal Configuration](https://github.com/vijaycs85/modal_config) module.
