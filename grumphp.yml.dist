@@ -1,9 +1,4 @@
 grumphp:
-  variables:
-    GRUMPHP_PROJECT_DIR: "./web"
-    GRUMPHP_GIT_WORKING_DIR: "."
-    GRUMPHP_GIT_REPOSITORY_DIR: "."
-    GRUMPHP_BIN_DIR: "./vendor/bin"
   tasks:
     phplint: ~
     yamllint: ~
