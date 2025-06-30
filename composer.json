@@ -23,9 +23,9 @@
     "sebastian/phpcpd": ">=4.0",
     "phpro/grumphp-shim": "^1.16",
     "drupal/core-composer-scaffold": "^9.4 || ^10.0",
-    "friendsoftwig/twigcs": ">=5.0"
+    "friendsoftwig/twigcs": ">=6.3"
   },
-  "support": {
+  "support": {  
     "issues": "https://github.com/miteshmap/drupal-quality-checker/issues",
     "source": "https://github.com/miteshmap/drupal-quality-checker"
   },
